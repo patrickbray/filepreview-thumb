@@ -7,6 +7,8 @@ RUN apt-get install -y ffmpeg
 RUN apt-get install -y imagemagick
 RUN apt-get install -y curl
 RUN apt-get install -y vim
+RUN apt-get install -y ghostscript
+RUN mkdir -p /opt/output
 
 WORKDIR /opt/thumb-generator
 COPY package*.json ./
